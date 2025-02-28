@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+    background-color:white;
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url(Fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "GaramondI";
+    src: url(Fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0px;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    font-family: "Garamond", bold;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+.subheader1 {
+    margin-bottom: 0px;
+    margin-top: -20px;
+    font-family: "Garamond", italic;
+}
+
+.subheader2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "GaramondI";
+}
+
+.navBar {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    background-color: gray;
+    z-index: 100;
+    width: 100vw;
+    /* background-color: white; */
+}
+
+#myHeader {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+:target {
+    scroll-margin-top: 211px;
+}
+
+.content {
+    position: relative;
+    top: 210px;
+    background-color: blue;
+}
+
+.margin-fix {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.section1 {
+    position: relative;
+    background-image: "Something";
+    font-size: 100px;
+    top: 211px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    text-align: center;
+    background-color: chocolate;
+}
+
+.section2 {
+    margin-top: 211px;
+    font-size: 100px;
+    padding-top: 262px;
+    padding-bottom: 261px;
+    text-align: center;
+    background-color:red;
+}
+
+.section3 {
+    font-size: 100px;
+    padding-top: 262px;
+    padding-bottom: 261px;
+    text-align: center;
+    background-color: blue;
+}
+
+/* Hide the menu button on larger screens */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 979px) {
+    .x-navbar-fixed-top {
+        position: relative;
+    }
+
+    .content {
+        position: relative;
+        top: 0px;
+    }
+
+    .menu-toggle {
+        display: block !important; /* Force it to appear */
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 9999; /* Ensure it's above everything */
+        border-radius: 5px;
+    }
+
+    /* Scrolled state for the menu button */
+    .menu-toggle.scrolled {
+        top: auto;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed; /* Ensure it appears over content */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: gray; /* Make sure it's visible */
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .navigation.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        font-size: 24px; /* Make options readable */
+        padding: 10px 0;
+    }
+
+    .navBar {
+        background-color: gray;
+    }
+
+    /* .menu {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0px;
+    } */
+
+    .section1 {
+        position: relative;
+        background-image: "Something";
+        font-size: 80px;
+        top: 60px;
+        text-align: center;
+    }
+
+    .section2 {
+        margin-top: 60px;
+        font-size: 80px;
+        top: 60px;
+        text-align: center;
+    }
+
+    .section3 {
+        font-size: 80px;
+        top: 60px;
+        text-align: center;
+    }
+
+    :target {
+        scroll-margin-top: 0px;
+    }
+}
