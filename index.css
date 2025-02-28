@@ -122,7 +122,9 @@ a {
 /* Hide the menu button on larger screens */
 .menu-toggle {
     display: none;
+    box-sizing: border-box;
 }
+
 
 @media (max-width: 979px) {
     .x-navbar-fixed-top {
@@ -135,26 +137,25 @@ a {
     }
 
     .menu-toggle {
-        display: block !important; /* Force it to appear */
+        display: flex !important;  /* Force flex display */
+        justify-content: center;   /* Horizontally center text */
+        align-items: center;       /* Vertically center text */
+        max-width: 100px;
+        max-height: 100px;
+        width: min(15vw, 15vh);    /* Set square size */
+        height: min(15vw, 15vh);   /* Ensure the button stays square */
         background-color: black;
         color: white;
-        font-size: 20px;
-        padding: 10px 15px;
+        font-size: min(6vw, 6vh);  /* Adjust font size proportionally */
+        padding: 0;                /* Remove any padding to keep button square */
         border: none;
         cursor: pointer;
         position: fixed;
-        top: 15px;
-        left: 15px;
-        z-index: 9999; /* Ensure it's above everything */
+        top: 3vh;                  /* Position relative to viewport */
+        left: 4vw;
+        z-index: 9999;             /* Ensure it's on top of other content */
         border-radius: 5px;
-    }
-
-    /* Scrolled state for the menu button */
-    .menu-toggle.scrolled {
-        top: auto;
-        bottom: 15px;
-        left: 15px;
-        right: 15px;
+        transition: all 0.3s ease;
     }
 
     .navigation {
@@ -181,6 +182,7 @@ a {
     .menu {
         font-size: 24px; /* Make options readable */
         padding: 10px 0;
+        
     }
 
     .navBar {
@@ -198,12 +200,12 @@ a {
         position: relative;
         background-image: "Something";
         font-size: 80px;
-        top: 60px;
+        top: 0px;
         text-align: center;
     }
 
     .section2 {
-        margin-top: 60px;
+        margin-top: 0px;
         font-size: 80px;
         top: 60px;
         text-align: center;

@@ -12,12 +12,12 @@ function toggleMenu() {
     }
 }
 
-// Detect scroll and add the 'scrolled' class to the menu button when user scrolls
-window.onscroll = function() {
-    let menuButton = document.getElementById('menuButton');
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        menuButton.classList.add('scrolled');
-    } else {
-        menuButton.classList.remove('scrolled');
-    }
-};
+// // Detect scroll and add the 'scrolled' class to the menu button when user scrolls
+// window.onscroll = function() {
+//     let menuButton = document.getElementById('menuButton');
+//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//         menuButton.classList.add('scrolled');
+//     } else {
+//         menuButton.classList.remove('scrolled');
+//     }
+// };
