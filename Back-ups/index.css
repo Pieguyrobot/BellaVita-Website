@@ -102,7 +102,7 @@ a {
 }
 
 .banner-image {
-    max-height: 159px;
+    max-height: 400px;
     max-width: 100%;
     object-fit: contain;
     vertical-align: middle; /* Adjust vertical alignment */
@@ -113,11 +113,11 @@ a {
     position: relative;
     background-image: "Something";
     font-size: 100px;
-    top: 211px;
-    padding-top: 180px;
-    padding-bottom: 180px;
+    top: 75px;
+    /* padding-top: 180px;
+    padding-bottom: 180px; */
     text-align: center;
-    background-color: chocolate;
+    background-color: #211f20;
 }
 
 .section2 {
