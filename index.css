@@ -30,17 +30,6 @@ a {
     text-decoration: none;
 }
 
-.menu {
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin: 0px;
-}
-
-.menu:hover {
-    cursor: pointer;
-}
-
 .center {
     text-align: center;
 }
@@ -64,49 +53,8 @@ a {
     font-family: "GaramondI";
 }
 
-.navBar {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    width: calc(100% - 17px);
-    background-color: #211f20;
-    z-index: 100;
-}
-
-#myHeader {
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-
 :target {
     scroll-margin-top: 211px;
-}
-
-.content {
-    position: relative;
-    top: 210px;
-    background-color: blue;
-}
-
-.margin-fix {
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-.banner-image {
-    max-height: 159px;
-    max-width: 100%;
-    object-fit: contain;
-    vertical-align: middle; /* Adjust vertical alignment */
-    display: inline-block;
 }
 
 .section1 {
@@ -114,10 +62,35 @@ a {
     background-image: "Something";
     font-size: 100px;
     top: 211px;
-    padding-top: 180px;
-    padding-bottom: 180px;
+    padding: 0;
+    height: 640px;
     text-align: center;
     background-color: chocolate;
+    overflow: hidden;
+}
+
+.section1 img {
+    width: 100%; /* Make the image span the full width */
+    height: 100%; /* Make the image span the full height of the section */
+    object-fit: cover; /* Ensures the image covers the section without stretching */
+    display: block; /* Removes any extra spacing below the image */
+    margin: 0;
+    padding: 0;
+}
+
+.section1 .overlay-text {
+    position: absolute;
+    right: 10%; /* Fixed space to the right for screens wider than 979px */
+    top: 50%; /* Vertically centers the text */
+    transform: translateY(-50%); /* Adjusts for perfect vertical centering */
+    font-family: "GaramondI", serif;
+    font-size: 10rem; /* Adjust font size as needed */
+    color: white; /* Text color for contrast */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better readability */
+    padding: 10px 20px; /* Adds padding around the text */
+    text-align: right; /* Aligns text content to the right */
+    max-width: 50%; /* Ensures the text doesn't take up too much space */
+    box-sizing: border-box;
 }
 
 .section2 {
@@ -137,100 +110,26 @@ a {
     background-color: blue;
 }
 
-/* Hide the menu button on larger screens */
-.menu-toggle {
-    display: none;
-    box-sizing: border-box;
-}
-
-/* Mobile Navigation Menu */
-.mobile-nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #211f20;
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile-nav-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.mobile-nav-content a {
-    color: #c5dbc7;
-    font-size: 24px;
-    margin: 10px 0;
-    text-decoration: none;
-}
-
-.hide-on-mobile {
-    display: block;
-}
-
 @media (max-width: 979px) {
-    .x-navbar-fixed-top {
-        position: relative;
-    }
-
-    .navBar {
-        width: 100%;
-    }
-
-    .content {
-        position: relative;
-        top: 0px;
-    }
-
-    .menu-toggle {
-        display: flex !important;  /* Force flex display */
-        justify-content: center;   /* Horizontally center text */
-        align-items: center;       /* Vertically center text */
-        max-width: 100px;
-        max-height: 100px;
-        width: min(15vw, 15vh);    /* Set square size */
-        height: min(15vw, 15vh);   /* Ensure the button stays square */
-        background-color: black;
-        color: white;
-        font-size: min(6vw, 6vh);  /* Adjust font size proportionally */
-        padding: 0;                /* Remove any padding to keep button square */
-        border: none;
-        cursor: pointer;
-        position: fixed;
-        top: 3vh;                  /* Position relative to viewport */
-        left: 4vw;
-        z-index: 9999;             /* Ensure it's on top of other content */
-        border-radius: 5px;
-    }
-
-    .menu-toggle:focus, .menu-toggle:active {
-        outline: none;
-        background-color: black; /* Keep the background color consistent */
-        color: white; /* Keep the text color consistent */
-    }
-
-    #myHeader {
-        display: none;  /* Hide the original navigation bar in mobile view */
-    }
-
-    .hide-on-mobile {
-        display: none;  /* Hide elements with this class in mobile view */
-    }
-
     .section1 {
         position: relative;
         background-image: "Something";
         font-size: 80px;
         top: 0px;
         text-align: center;
+    }
+
+    .section1 .overlay-text {
+        position: absolute;
+        right: 0; /* Aligns the text to the right edge */
+        left: 0; /* Ensures the text spans the full width */
+        top: 50%; /* Vertically centers the text */
+        transform: translateY(-50%); /* Keeps the text vertically centered */
+        font-size: 10rem; /* Reduces font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Centers the text content */
+        max-width: 100%; /* Makes the text container span the full width */
+        background-color: rgba(0, 0, 0, 0.7); /* Optional: darker background for better readability */
     }
 
     .section2 {

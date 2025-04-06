@@ -1,0 +1,62 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    font-family: "Garamond", bold;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+.subheader1 {
+    margin-bottom: 0px;
+    margin-top: -20px;
+    font-family: "Garamond", italic;
+}
+
+.subheader2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "GaramondI";
+}
+
+:target {
+    scroll-margin-top: 211px;
+}
+
+.section1 {
+    position: relative;
+    background-image: "Something";
+    font-size: 100px;
+    top: 234px;
+    padding: 0;
+    padding-top: 300px;
+    padding-bottom: 400px;
+    /* height: 640px; */
+    text-align: center;
+    background-color: chocolate;
+    overflow: hidden;
+}

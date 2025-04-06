@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="socials.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <meta name="color-scheme" content="dark">
+    <title> Bella Vita - About Us </title>
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle" id="menuButton" onclick="toggleMenu()">☰</button>
+
+    <!-- Header -->
+    <div class="navBar x-navbar-fixed-top">
+        <div class="line headerpart" id="myHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns nav">
+                        <a href="index.html"> <p class="menu"> Home </p> </a>
+                    </div>
+                    <div class="three columns nav">
+                        <a href="socials.html"> <p class="menu"> Socials </p> </a>
+                    </div>
+                    <div class="three columns nav hide-on-mobile">
+                        <a href="about-us.html"><p class="menu"> About Us </p> </a>
+                    </div>
+                    <div class="three columns nav hide-on-mobile">
+                        <a href="book-now.html"><p class="menu"> Book Now </p> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerpart">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns center">
+                        <img src="Images/Logo.jpg" alt="Bella Vita Logo" class="banner-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-content">
+            <a href="index.html" onclick="toggleMenu()"> Home </a>
+            <a href="socials.html" onclick="toggleMenu()"> Socials </a>
+            <a href="about-us.html" onclick="toggleMenu()"> About us</a>
+            <a href="book-now.html" onclick="toggleMenu()"> Book Now</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="section1 margin-fix">
+        <h1> *ABOUT US* </h1>
+        <h1> Work in Progress </h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
