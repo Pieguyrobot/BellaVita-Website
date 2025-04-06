@@ -60,3 +60,18 @@ a {
     background-color: chocolate;
     overflow: hidden;
 }
+
+@media (max-width: 979px) {
+    .section1 {
+        font-size: 80px;
+        top: 0px;
+        text-align: center;
+    }
+
+    /* Class to prevent body scrolling */
+    .no-scroll {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+}
