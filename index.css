@@ -348,6 +348,17 @@ a {
         border-radius: 50px;
     }
 
+    .footer-container {
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: center; /* Center the sections */
+    }
+
+    .footer-map, .footer-contact, .footer-social {
+        flex: 1 1 100%; /* Make each section take up the full width */
+        text-align: center; /* Center the text for smaller screens */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
     :target {
         scroll-margin-top: 0px;
     }
