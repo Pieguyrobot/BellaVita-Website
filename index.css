@@ -255,8 +255,9 @@ a {
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px; /* Smaller text for copyright */
-    border-top: 1px solid #c5dbc7; /* Add a subtle border */
+    border-top: 1px solid #c5dbc7; /* Add a subtle border */ 
     padding-top: 10px;
+    margin-bottom: -35px;
 }
 
 @media (max-width: 979px) {
