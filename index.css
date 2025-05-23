@@ -95,19 +95,168 @@ a {
 
 .section2 {
     margin-top: 75px;
-    font-size: 100px;
-    padding-top: 262px;
-    padding-bottom: 261px;
+    font-size: 20px;
+    padding-top: 200px;
+    padding-right: 12%;
+    padding-left: 12%;
+    padding-bottom: 15px;
     text-align: center;
-    background-color: red;
+    background-color: #211f20;
+    color: #c5dbc7;
+}
+
+.booking {
+    text-align: left;
+}
+
+.section2-header1 {
+    font-size: 30px;
+}
+
+.section2-header2 {
+    font-size: 25px;
+}
+
+.section2 .container {
+    width: 100%; /* Makes the container span the full width */
+    max-width: none; /* Removes the maximum width constraint */
+    padding: 0 20px; /* Optional: Adds padding to prevent content from touching the edges */
+}
+
+/* Gap */
+.section2 .row {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between columns */
+    gap: 3vw; /* Adds a gap between the two columns */
+}
+
+.section2 .six.columns {
+    flex: 1; /* Ensures both columns take up equal space */
+}
+
+
+.section3 {
+    padding: 50px 5vw; /* Add padding to the section */
+    text-align: center;
+    background-color: #4b644d; /* Optional: Background color for the section */
 }
 
 .section3 {
-    font-size: 100px;
-    padding-top: 262px;
-    padding-bottom: 261px;
+    padding: 50px 3vw; /* Add padding to the section */
     text-align: center;
-    background-color: blue;
+    background-color: #4b644d; /* Optional: Background color for the section */
+}
+
+.section3 .container {
+    width: 100%; /* Make the container span the full width */
+    max-width: none; /* Remove any maximum width constraint */
+    padding: 0; /* Remove padding to allow images to use the full width */
+}
+
+.section3-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better aesthetics */
+}
+/* Default: Show desktop section, hide mobile section */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.section3-header {
+    color: white;
+}
+
+/* Style for the button container */
+.button-container {
+    text-align: center; /* Center the button */
+    margin-top: 30px; /* Add spacing above the button */
+}
+
+/* Style for the Book Now link */
+.book-now-link {
+    display: inline-block; /* Make the link behave like a button */
+    background-color: #c5dbc7; /* Light green color matching the theme */
+    color: #211f20; /* Dark text color for contrast */
+    font-family: "Garamond", serif; /* Use the same font as the section */
+    font-size: 20px; /* Make the text readable */
+    padding: 15px 30px; /* Add padding for a larger clickable area */
+    text-decoration: none; /* Remove the underline */
+    text-align: center; /* Center the text horizontally */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    width: 25%; /* Default width for desktop */
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+/* Hover effect for the Book Now link */
+.book-now-link:hover {
+    background-color: #4b644d; /* Darker green for hover */
+    color: #ffffff; /* Change text color to white */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow */
+}
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #211f20; /* Dark background matching the theme */
+    color: #c5dbc7; /* Light text color for contrast */
+    padding: 30px 5vw; /* Add padding around the footer */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    justify-content: space-between; /* Space out the sections */
+    gap: 20px; /* Add spacing between sections */
+}
+
+.footer-map, .footer-contact, .footer-social {
+    flex: 1 1 30%; /* Each section takes up 30% of the width */
+    min-width: 250px; /* Ensure sections don't shrink too much */
+}
+
+.footer-map iframe {
+    border-radius: 10px; /* Add rounded corners to the map */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.footer-contact a {
+    color: #c5dbc7; /* Match the footer text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-contact a:hover {
+    color: #4b644d; /* Change color on hover */
+}
+
+.footer-social a {
+    color: #c5dbc7; /* Match the footer text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px; /* Add spacing between links */
+}
+
+.footer-social a:hover {
+    color: #4b644d; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px; /* Smaller text for copyright */
+    border-top: 1px solid #c5dbc7; /* Add a subtle border */
+    padding-top: 10px;
 }
 
 @media (max-width: 979px) {
@@ -134,15 +283,69 @@ a {
 
     .section2 {
         margin-top: 0px;
-        font-size: 80px;
+        padding-top: 30px;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        font-size: 20px;
         top: 60px;
         text-align: center;
+    }
+
+    .section2 .row {
+        display: flex;
+        flex-direction: column; /* Stack the columns vertically */
+    }
+
+    .section2 .six.columns {
+        width: 100%; /* Make each column take up the full width */
+        margin-bottom: 20px; /* Add spacing between the sections */
+    }
+
+    .section2 .six.columns:last-child {
+        margin-bottom: 0; /* Remove margin for the last section */
     }
 
     .section3 {
         font-size: 80px;
         top: 60px;
         text-align: center;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .mobile-only .row {
+        display: flex;
+        flex-direction: column; /* Stack the images vertically */
+        gap: 20px; /* Add spacing between the images */
+    }
+
+    .mobile-only .six.columns {
+        width: 100%; /* Make each column take up the full width */
+        max-width: 100%; /* Ensure the columns span the full width */
+        padding: 0 5vw; /* Add some padding on the sides for spacing */
+    }
+
+    .mobile-only .section3-image {
+        width: 100%; /* Ensure the images are responsive */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 100%; /* Ensure the images span the full width of their container */
+        border-radius: 10px; /* Optional: Add rounded corners */
+    }
+
+    .button-container {
+        margin-top: 0px;
+    }
+
+    .book-now-link {
+        font-size: 30px;
+        width: 70%;
+        border-radius: 50px;
     }
 
     :target {
